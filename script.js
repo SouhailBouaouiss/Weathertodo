@@ -1,6 +1,7 @@
 const input = document.querySelector("input");
 const addBtn = document.querySelector("button");
 const addItem = document.querySelector("#to");
+const errorLabel = document.querySelector("label");
 
 const taskHtml = ({ name, id }) => {
   return `<div class="col-12 row justify-content-between mt-3" style="    padding: 15px;
@@ -25,10 +26,15 @@ class Todo {
 }
 
 addBtn.addEventListener("click", () => {
-  const newTodo = new Todo(todos.length + 1, input.value);
-  todos.push(newTodo);
-  renderTodos();
-  input.value = "";
+  if (input.value !== "") {
+    const newTodo = new Todo(todos.length + 1, input.value);
+    todos.push(newTodo);
+    renderTodos();
+    input.value = "";
+    errorLabel.style.display = "none";
+  } else {
+    errorLabel.style.display = "inline";
+  }
 });
 
 const renderTodos = () => {
