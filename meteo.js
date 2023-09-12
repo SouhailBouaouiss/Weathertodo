@@ -20,7 +20,7 @@ searchBtn.addEventListener("click", handleBtnClick);
 
 const fetchApiData = async (cityName) => {
   const response = await fetch(
-    `http://api.weatherapi.com/v1/current.json?key=d18e304704a44a208db102705232908&q=${cityName}&aqi=n`
+    `https://api.weatherapi.com/v1/current.json?key=d18e304704a44a208db102705232908&q=${cityName}&aqi=n`
   );
 
   const data = await response.json();
