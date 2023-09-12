@@ -1,0 +1,28 @@
+main{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+}
+
+body{
+    background-image: url(https://media.discordapp.net/attachments/1151076650595909652/1151076668815982622/watercolor-background_1409-1497.png?width=788&height=473);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Dancing Script', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'REM', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Rubik', sans-serif;
+}
+img{
+    width: 95px;
+    border-radius: 25px;
+}
+
+h1{
+    color: rgb(84, 83, 83);
+}

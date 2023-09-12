@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="meteo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@600&family=REM:wght@200;300&family=Roboto+Condensed:wght@300;700&family=Roboto+Slab&family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Container -->
+    <main class="container-sm">
+      <div class="row mb-5">
+        <div class="col-10">
+          <input
+            type="search"
+            class="form-control"
+            placeholder="Enter a city name"
+          />
+        </div>
+        <div class="col-2">
+          <button type="search" class="btn btn-light">Search</button>
+        </div>
+      </div>
+
+      <section id="city-data" class="row mt-5">
+        <div class="col-md-4 d-flex justify-content-end">
+          <img
+            src="https://i.pinimg.com/564x/a7/9e/8f/a79e8fd559dcfa8271332535839f1262.jpg"
+            alt=""
+          />
+        </div>
+        <div class="col-md-6 d-flex justify-content-start mt-4">
+          <h1 style="text-align: center">Daily Weather</h1>
+        </div>
+        <h3 class="mt-5 text-center" style="color: rgb(84, 83, 83)">
+          Our app have one thing in common with umbrellas: <br />They both exist
+          because the rain exists!
+        </h3>
+      </section>
+    </main>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="meteo.js"></script>
+  </body>
+</html>
